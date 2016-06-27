@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root 'pages#index'
   #Defines routes for pages
   get '/home' => 'pages#home'
-  get '/profile' => 'pages#profile'
+  get '/user/:id' => 'pages#profile'
   get '/explorer' => 'pages#explorer'
 
   # The priority is based upon order of creation: first created -> highest priority.
